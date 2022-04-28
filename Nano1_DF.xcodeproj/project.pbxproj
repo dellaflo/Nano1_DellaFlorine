@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		B47B8F4F281A4DEB00548D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F4E281A4DEB00548D89 /* AppDelegate.swift */; };
 		B47B8F51281A4DEB00548D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F50281A4DEB00548D89 /* SceneDelegate.swift */; };
-		B47B8F53281A4DEB00548D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F52281A4DEB00548D89 /* ViewController.swift */; };
+		B47B8F53281A4DEB00548D89 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F52281A4DEB00548D89 /* NoteDetailVC.swift */; };
 		B47B8F56281A4DEB00548D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47B8F54281A4DEB00548D89 /* Main.storyboard */; };
 		B47B8F59281A4DEB00548D89 /* Nano1_DF.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F57281A4DEB00548D89 /* Nano1_DF.xcdatamodeld */; };
 		B47B8F5B281A4DEB00548D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B47B8F5A281A4DEB00548D89 /* Assets.xcassets */; };
 		B47B8F5E281A4DEB00548D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B47B8F5C281A4DEB00548D89 /* LaunchScreen.storyboard */; };
+		B47B8F66281A4FFE00548D89 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F65281A4FFE00548D89 /* NoteCell.swift */; };
+		B47B8F68281A501800548D89 /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F67281A501800548D89 /* NoteTableView.swift */; };
+		B47B8F6A281A524800548D89 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47B8F69281A524800548D89 /* Note.swift */; };
+		B4D4D6B0281AA62C00A52621 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D4D6AF281AA62C00A52621 /* QuotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B47B8F4B281A4DEB00548D89 /* Nano1_DF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nano1_DF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47B8F4E281A4DEB00548D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B47B8F50281A4DEB00548D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B47B8F52281A4DEB00548D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B47B8F52281A4DEB00548D89 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 		B47B8F55281A4DEB00548D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B47B8F58281A4DEB00548D89 /* Nano1_DF.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nano1_DF.xcdatamodel; sourceTree = "<group>"; };
 		B47B8F5A281A4DEB00548D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B47B8F5D281A4DEB00548D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B47B8F5F281A4DEB00548D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B47B8F65281A4FFE00548D89 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		B47B8F67281A501800548D89 /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
+		B47B8F69281A524800548D89 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		B4D4D6AF281AA62C00A52621 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,13 @@
 		B47B8F4D281A4DEB00548D89 /* Nano1_DF */ = {
 			isa = PBXGroup;
 			children = (
+				B4D4D6AF281AA62C00A52621 /* QuotesViewController.swift */,
+				B47B8F69281A524800548D89 /* Note.swift */,
+				B47B8F67281A501800548D89 /* NoteTableView.swift */,
+				B47B8F65281A4FFE00548D89 /* NoteCell.swift */,
 				B47B8F4E281A4DEB00548D89 /* AppDelegate.swift */,
 				B47B8F50281A4DEB00548D89 /* SceneDelegate.swift */,
-				B47B8F52281A4DEB00548D89 /* ViewController.swift */,
+				B47B8F52281A4DEB00548D89 /* NoteDetailVC.swift */,
 				B47B8F54281A4DEB00548D89 /* Main.storyboard */,
 				B47B8F5A281A4DEB00548D89 /* Assets.xcassets */,
 				B47B8F5C281A4DEB00548D89 /* LaunchScreen.storyboard */,
@@ -141,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B47B8F53281A4DEB00548D89 /* ViewController.swift in Sources */,
+				B47B8F53281A4DEB00548D89 /* NoteDetailVC.swift in Sources */,
+				B47B8F68281A501800548D89 /* NoteTableView.swift in Sources */,
+				B47B8F6A281A524800548D89 /* Note.swift in Sources */,
 				B47B8F4F281A4DEB00548D89 /* AppDelegate.swift in Sources */,
+				B47B8F66281A4FFE00548D89 /* NoteCell.swift in Sources */,
+				B4D4D6B0281AA62C00A52621 /* QuotesViewController.swift in Sources */,
 				B47B8F51281A4DEB00548D89 /* SceneDelegate.swift in Sources */,
 				B47B8F59281A4DEB00548D89 /* Nano1_DF.xcdatamodeld in Sources */,
 			);
