@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,22 +13,22 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCloverSC" translatesAutoresizingMaskIntoConstraints="NO" id="odu-gN-Yts">
-                                <rect key="frame" x="114.5" y="355.5" width="185" height="185"/>
+                                <rect key="frame" x="112.66666666666669" y="339.66666666666669" width="165" height="165"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="185" id="ENs-PS-zaa"/>
-                                    <constraint firstAttribute="width" constant="185" id="cHg-Zm-lFZ"/>
+                                    <constraint firstAttribute="height" constant="165" id="F0O-Xp-JCr"/>
+                                    <constraint firstAttribute="width" constant="165" id="a7O-P9-gaZ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="GreenColor"/>
                         <constraints>
-                            <constraint firstItem="odu-gN-Yts" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4M6-VG-uda"/>
-                            <constraint firstItem="odu-gN-Yts" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="HCD-U8-KBS"/>
+                            <constraint firstItem="odu-gN-Yts" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0GP-bS-MfV"/>
+                            <constraint firstItem="odu-gN-Yts" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="t5t-Rc-aOo"/>
                         </constraints>
                     </view>
                 </viewController>
