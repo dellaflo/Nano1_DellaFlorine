@@ -13,6 +13,10 @@ var noteList = [Note] ()
 
 class NoteTableView: UITableViewController {
     
+    
+    @IBOutlet weak var plusButton: UIButton!
+    @IBOutlet weak var quoteButton: UIBarButtonItem!
+    
     var selectedNote: Note? = nil
     
     var firstLoad = true
@@ -44,8 +48,6 @@ class NoteTableView: UITableViewController {
             }
         }
     }
-    
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let noteCell = tableView.dequeueReusableCell(withIdentifier: "noteCellID", for: indexPath) as! NoteCell

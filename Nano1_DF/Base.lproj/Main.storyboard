@@ -3,7 +3,6 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -70,9 +69,8 @@
                         <rightBarButtonItems>
                             <barButtonItem id="owx-tf-t6L">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kgj-ys-h6Q">
-                                    <rect key="frame" x="327" y="5" width="47" height="34.333333333333336"/>
+                                    <rect key="frame" x="327" y="4.6666666666666679" width="47" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                     <color key="tintColor" name="OrangeColor"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
@@ -83,13 +81,11 @@
                             </barButtonItem>
                             <barButtonItem id="QGr-aQ-9X3">
                                 <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="UF3-Du-0lI">
-                                    <rect key="frame" x="274" y="4.6666666666666679" width="45" height="35"/>
+                                    <rect key="frame" x="268" y="4.6666666666666679" width="51" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" name="OrangeColor"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain">
-                                        <imageReference key="image" image="text.quote.rtl" catalog="system" symbolScale="medium"/>
-                                    </buttonConfiguration>
+                                    <buttonConfiguration key="configuration" style="plain" image="text.quote.rtl" catalog="system" title=""/>
                                     <connections>
                                         <segue destination="Yys-85-beH" kind="show" id="sjh-9I-Qiz"/>
                                     </connections>
@@ -98,6 +94,8 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="plusButton" destination="kgj-ys-h6Q" id="MUY-cz-H19"/>
+                        <outlet property="quoteButton" destination="QGr-aQ-9X3" id="tt2-9o-2Ly"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="editNote" id="ImA-dR-RnB"/>
                     </connections>
                 </tableViewController>
@@ -114,13 +112,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-DJ-UUO">
-                                <rect key="frame" x="25" y="260" width="340" height="40.666666666666686"/>
+                                <rect key="frame" x="25" y="249.99999999999997" width="340" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iki-13-FNQ">
-                                <rect key="frame" x="25" y="325.66666666666669" width="340" height="29"/>
+                                <rect key="frame" x="25" y="315.66666666666669" width="340" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -138,7 +136,7 @@
                         <constraints>
                             <constraint firstItem="Iki-13-FNQ" firstAttribute="top" secondItem="Uca-DJ-UUO" secondAttribute="bottom" constant="25" id="462-Dl-DWd"/>
                             <constraint firstItem="91K-wO-i7r" firstAttribute="trailing" secondItem="2zJ-A2-RG7" secondAttribute="trailing" id="9v8-ur-lli"/>
-                            <constraint firstItem="Uca-DJ-UUO" firstAttribute="top" secondItem="2zJ-A2-RG7" secondAttribute="top" constant="120" id="Epe-Gx-PV8"/>
+                            <constraint firstItem="Uca-DJ-UUO" firstAttribute="top" secondItem="2zJ-A2-RG7" secondAttribute="top" constant="110" id="Epe-Gx-PV8"/>
                             <constraint firstItem="2zJ-A2-RG7" firstAttribute="trailing" secondItem="Iki-13-FNQ" secondAttribute="trailing" constant="25" id="GLl-KB-V3n"/>
                             <constraint firstItem="Uca-DJ-UUO" firstAttribute="leading" secondItem="2zJ-A2-RG7" secondAttribute="leading" constant="25" id="QE0-HN-KFK"/>
                             <constraint firstItem="Iki-13-FNQ" firstAttribute="leading" secondItem="2zJ-A2-RG7" secondAttribute="leading" constant="25" id="Uv9-7s-sGS"/>
@@ -196,13 +194,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Title Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBm-6G-9Ef">
-                                <rect key="frame" x="25" y="123.00000000000001" width="340" height="38.666666666666671"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Title Here" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CBm-6G-9Ef">
+                                <rect key="frame" x="25" y="122.99999999999999" width="340" height="42.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VGd-E4-W03">
-                                <rect key="frame" x="25" y="227.33333333333337" width="340" height="480"/>
+                                <rect key="frame" x="25" y="231" width="340" height="480"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="480" id="C0K-Gm-f0A"/>
@@ -227,20 +225,19 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="0cX-4k-HhO">
-                                <rect key="frame" x="25" y="191.66666666666666" width="340" height="30.666666666666657"/>
+                                <rect key="frame" x="25" y="195.33333333333334" width="340" height="30.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="I am grateful for..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99d-xy-uHo">
-                                        <rect key="frame" x="0.0" y="0.0" width="256" height="30.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="263" height="30.666666666666668"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3Z-DF-69t">
-                                        <rect key="frame" x="256" y="0.0" width="84" height="30.666666666666668"/>
+                                        <rect key="frame" x="263" y="0.0" width="77" height="30.666666666666668"/>
                                         <color key="tintColor" name="OrangeColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="shuffle" catalog="system" symbolScale="large"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="shuffle" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
                                         </buttonConfiguration>
                                         <connections>

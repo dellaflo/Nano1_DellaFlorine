@@ -94,24 +94,7 @@ class NoteDetailVC: UIViewController, UITextViewDelegate {
     }
     
         @IBAction func deleteNoteAction(_ sender: Any) {
-            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-            
-            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
-            do {
-                let results:NSArray = try context.fetch(request) as NSArray
-                for result in results {
-                    let note = result as! Note
-                    if(note == selectedNote) {
-                        note.deletedDate = Date()
-                        try context.save()
-
-                    }
-                }
-            } catch {
-                print("Fetch Failed")
-            }
-            navigationController?.popToRootViewController(animated: true)
+            showAlert()
         }
     
     @IBAction func randomButtonTap(_ sender: Any) {
@@ -165,6 +148,32 @@ class NoteDetailVC: UIViewController, UITextViewDelegate {
         contentTextView.textContainer.lineFragmentPadding = CGFloat(0.0)
         contentTextView.textContainerInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         contentTextView.contentInset = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 0)
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Are you sure to delete?", message: "You will not be able to recover this journal anymore", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { action in
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+            
+            let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+            do {
+                let results:NSArray = try context.fetch(request) as NSArray
+                for result in results {
+                    let note = result as! Note
+                    if(note == self.selectedNote) {
+                        note.deletedDate = Date()
+                        try context.save()
+                    }
+                }
+            } catch {
+                print("Fetch Failed")
+            }
+            self.navigationController?.popToRootViewController(animated: true)
+        }))
+        present(alert, animated: true)
+        
+        alert.addAction(UIAlertAction(title: "No", style: .cancel))
     }
 }
 
