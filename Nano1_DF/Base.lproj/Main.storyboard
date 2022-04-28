@@ -194,7 +194,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your Title Here" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CBm-6G-9Ef">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write Date Here" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CBm-6G-9Ef">
                                 <rect key="frame" x="25" y="122.99999999999999" width="340" height="42.333333333333329"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <textInputTraits key="textInputTraits"/>
